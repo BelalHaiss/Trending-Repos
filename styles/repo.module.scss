@@ -1,0 +1,76 @@
+.container {
+  max-width: 90%;
+
+  margin: 0 auto;
+  margin-top: 10px;
+  padding: 10px;
+  border: 1px solid lightgray;
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  .avatar {
+    width: 10%;
+    text-align: center;
+
+    img {
+      border-radius: 100px;
+      max-width: 100%;
+      height: auto;
+    }
+  }
+  .details {
+    flex-direction: column;
+    display: flex;
+    gap: 0.5rem;
+    .name {
+      font-size: 1.2rem;
+      font-weight: bold;
+    }
+    .desc {
+      font-size: 1.1rem;
+    }
+    span {
+      padding: 5px;
+      font-style: italic;
+      min-width: 90px;
+      text-align: center;
+    }
+    .info {
+      gap: 1rem;
+      align-items: center;
+      padding: 1px;
+      flex-wrap: wrap;
+      display: flex;
+      .issues {
+        border: 1px solid lightcoral;
+      }
+      .stars {
+        border: 1px solid lightseagreen;
+      }
+      .info_text {
+        font-size: small;
+        font-weight: lighter;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 670px) {
+  .container {
+    flex-direction: column;
+
+    .avatar {
+      width: 30%;
+      img {
+        border-radius: 200px;
+      }
+    }
+    .details {
+      align-items: center;
+      justify-content: center;
+    }
+    .info {
+      justify-content: center;
+    }
+  }
+}
